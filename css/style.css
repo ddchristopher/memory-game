@@ -1,0 +1,94 @@
+
+@media screen and (max-width: 576px) {
+    .flip-container {
+      width: 75px;
+      height: 75px;
+    }
+    table {
+      border: 5px solid #039be5;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .flip-container {
+      width: 110px;
+      height: 110px;
+    }
+    table {
+      border: 25px solid #039be5;
+    }
+    .reload {
+      float:right;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flip-container {
+      width: 150px;
+      height: 150px;
+    }
+    table {
+      border: 50px solid #039be5;
+    }
+    .reload {
+      float:right;
+    }
+}
+
+
+table {
+  background-color: #039be5;
+  margin: auto;
+}
+
+.flip-container {
+  margin: auto;
+  position: relative;
+  perspective: 800px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform .6s;
+  border-radius: 15px;
+}
+
+.card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.card .front {
+  background: #0d47a1;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card-image {
+  display: block;
+  margin: auto;
+  height: 100%;
+  padding: 5px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.first-match {
+  background-color: #81d4fa;
+}
+
+.modal-body {
+  text-align: center;
+}
