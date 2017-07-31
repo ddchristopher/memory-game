@@ -5,7 +5,7 @@ by Dmitri Christopher
 A memory matching game using html, css, and javascript created for the Udacity Intro to Programming Nanodegree.
 
 ## How to Start:
-Clone the repository and open index.html file
+Download the repository and open index.html file
 
 ## Rules:
 The game randomly assigns 8 pairs of Rune symbols to 16 cards. Each card will flip over when the player clicks it, revealing the symbol on its back. When the player flips a second card, if the card matches the first both cards will remain flipped. If they do not match they will flip over again.
